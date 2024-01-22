@@ -1,0 +1,162 @@
+body {
+    background: url('Background.jpeg') center/cover;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+heading{
+    font-family: "font-family: 'Verdana', sans-serif; color: #3498db; text-align: center; text-shadow: 2px 2px 4px #000; letter-spacing: 2px;";
+    font-size: 4rem;
+    position: absolute;
+    margin-bottom: 35%;  
+    animation: popFromTop 4s ease-out 2s forwards;
+    color: rgba(255, 255, 255, 0.766);
+
+}
+
+.control-room {
+    font-size: 3rem;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    animation: popFromTop 6s ease-out forwards;
+   
+}
+.input-container {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 3rem;
+    font-family: cursive;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+    padding: 8px;
+    width: 20%;
+    box-sizing: border-box;
+}
+
+.ans {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.sbmt button {
+    font-family: cursive;
+    background-color: #007bff;
+    color: #fff;
+    padding: 7px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2rem;
+
+}
+
+.sbmt button:hover {
+    background-color: #0056b3;
+}
+
+.GR button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 7px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-family: cursive;
+    font-size: 1.2rem;
+}
+
+.GR button#Reset {
+    background-color: #dc3545;
+    margin-top: 20px;
+    width: 100px;
+}
+.GR button#Reset:hover {
+    background-color: #e30b21;
+}
+
+.GR button:hover {
+    background-color: #218838;
+}
+
+#num {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+.input-container,
+.ans,
+.sbmt,
+.GR {
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: fadeInUp 1s ease-out 2s forwards;
+}
+
+.heart {
+    color: red;
+    display: inline-block;
+    animation: heartbeat 1.5s infinite;
+}
+.Love{
+    font-size: 1.5rem;
+    margin-top: 20px;
+    font-family: cursive;
+}
+
+@keyframes popFromTop {
+    0% {
+        transform: translateY(-100vh);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    heading {
+        position: absolute;
+        font-size: 2rem;
+        margin-bottom: 140%; 
+    }
+}
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
